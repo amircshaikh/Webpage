@@ -56,6 +56,96 @@
         .page-page-1{display:inherit; }
     </style>
     <!-- Silex HEAD tag do not remove -->
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>Ethernet Module Configuration</title>
+        <link href="./Module Configuration_files/mchp.css" rel="stylesheet" type="text/css">
+        <script src="./Module Configuration_files/mchp.js" type="text/javascript"></script>
+    </head>
+
+    <body bgcolor="white">
+        <table width="350" border="5" cellspacing="0" cellpadding="0">
+            <tbody>
+                <tr>
+                    <td>
+                        <div style="padding:0 0 5px 15px">
+                            <div class="center">
+                                <font face="Courier New" size="4.5"><strong> Nebulas Automation Pvt. Ltd.</strong> </font></div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="spacer">&nbsp;</div>
+        <form method="post" action="./protect/config.htm" name="config">
+            <fieldset>
+                <legend><strong>Ethernet Configuration Settings</strong></legend>
+                <div>
+                    <label>MAC Address:</label>
+                    <input type="text" name="mac" value="D8:80:39:C6:61:84">
+                </div>
+                <div>
+                    <label>Local IP:</label>
+                    <input type="text" name="ip" value="192.168.1.60">
+                </div>
+                <div>
+                    <label>Local Port:</label>
+                    <input type="text" name="lpr" value="2000">
+                </div>
+                <div>
+                    <label>Gateway:</label>
+                    <input type="text" name="gw" value="192.168.1.1">
+                </div>
+                <div>
+                    <label>Subnet Mask:</label>
+                    <input type="text" name="sub" value="255.255.255.0">
+                </div>
+                <div>
+                    <label>Remote IP:</label>
+                    <input type="text" name="sip" value="10.0.0.25">
+                </div>
+                <div>
+                    <label>Remote Port:</label>
+                    <input type="text" name="rpr" value="8585">
+                </div>
+                <div>
+                    <label>Timeout in sec:</label>
+                    <input type="text" name="tsc" value="10">
+                </div>
+                <div>
+                    <input type="submit" class="sm" value="Save Settings">
+                </div>
+            </fieldset>
+        </form>
+
+        <script language="javascript">
+            function configIPBoxes() 
+            			{
+            				e = document.forms.config;
+            				st = e.dhcp.checked;
+            				e.ip.disabled = st;
+            				e.gw.disabled = st;
+            				e.sub.disabled = st;
+            				e.dns1.disabled = st;
+            				e.dns2.disabled = st;
+            				e.sip.disabled = st;
+            			}
+            			configIPBoxes();
+        </script>
+
+        <div class="spacer">&nbsp;</div>
+        <div id="footer">Copyright Â© 2016 NAPL, Kolhapur, India.</div>
+        <div id="footer">NEBULAS AUTOMATION PVT. LTD.</div>
+        <div id="footer">123/A, Bagewadi Compound, PB Road, Shiroli (P) - 416122, </div>
+        <div id="footer">Contact:(0230)2461503, +919921991299 </div>
+        <div id="footer">http://www.naplindia.in, Email: contact@naplindia.in</div>
+
+        <div id="footer">Version 16.8</div>
+    </body>
+
+    </html>
     <!-- End of Silex HEAD tag do not remove -->
 </head>
 
